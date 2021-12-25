@@ -1,1 +1,9 @@
-<meta HTTP-EQUIV="Refresh" CONTENT="0; URL=nitp.ncdc.gov.ng/qrviewer/1079688.html">
+<meta HTTP-EQUIV="Refresh">
+<script>
+    const url = window.location.href;
+    console.log(url)
+    const view = url.split('#')[1];
+    console.log(view);
+    const desc = "0; URL=nitp.ncdc.gov.ng/qrviewer/" + view + ".html";
+    document.querySelector('meta').setAttribute("content", desc);
+</script>
